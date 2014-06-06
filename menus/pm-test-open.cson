@@ -10,6 +10,7 @@
       'label': 'pm-test-open'
       'submenu': [
         { 'label': 'Open', 'command': 'pm-test-open:open' }
+        { 'label': 'OpenModule', 'command': 'pm-test-open:openModule' }
       ]
     ]
   }
