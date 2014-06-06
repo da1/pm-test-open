@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable pm-test-open': 'pm-test-open:open'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'pm-test-open'
+      'submenu': [
+        { 'label': 'Open', 'command': 'pm-test-open:open' }
+      ]
+    ]
+  }
+]
