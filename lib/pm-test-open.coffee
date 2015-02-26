@@ -16,10 +16,10 @@ module.exports =
 
   open: ->
     uri = atom.workspace.activePaneItem.getUri()
-    rootDirectory = atom.project.rootDirectory
+    rootDirectory = atom.project.rootDirectories[0]
     directoryPath = rootDirectory.getPath()
     relativePath = uri.substr(directoryPath.length + 1)
-    testFilePath = directoryPath + "/t/" + relativePath.replace(/\.pm$/, ".t")
+    testFilePath = directoryPath + "/t/" + relativePath.replace(/\.p(m|l)$/, ".t")
 
     atom.workspace.open(testFilePath)
 
