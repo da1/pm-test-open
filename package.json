@@ -3,7 +3,6 @@
   "main": "./lib/pm-test-open",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["pm-test-open:open"],
   "repository": "https://github.com/atom/pm-test-open",
   "license": "MIT",
   "engines": {
