@@ -26,7 +26,7 @@ module.exports =
 
   openModule: ->
     uri = atom.workspace.getActivePaneItem().getURI()
-    rootDirectory = atom.project.rootDirectory
+    rootDirectory = atom.project.rootDirectories[0]
     directoryPath = rootDirectory.getPath()
     relativePath = uri.substr(directoryPath.length + 1)
     filePath = directoryPath + "/" + relativePath.replace(/^t\//, "").replace(/\.t$/, ".pm")
